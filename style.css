@@ -1,0 +1,552 @@
+body{
+                    overflow:hidden;
+                    font-family:"Raleway";
+                    box-sizing:border-box;
+                }
+                /*This is a CSS variable, the '--' initiates it like 'var' in PJS*/
+                *{
+                    --career-header-type-thickness:3px;
+                }
+                /**This is the style value for the physics header.*/
+                .physicist-header{
+                    transition:all 1s;
+                    font-family:"Dorsa";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:rotate(90deg) translate(-60px,80px);
+                    
+
+                    cursor:pointer;
+                    font-size:150px;
+                    /*This is called a @keyframes animation, it specifies the name length and how many times it will play.*/
+                    animation: physicistShake 0.5s infinite;
+                }
+                
+                
+                
+                @keyframes physicistShake{
+                    /*This opens the animation by the name. And the following is the change in the animation by every 10% which would by 0.05 seconds in this case.*/
+                    0%{transform:rotate(90deg) translate(-60px,80px);}
+                    10%{transform:rotate(90deg) translate(-63px,78px);}
+                    20%{transform:rotate(90deg) translate(-58px,82px);}
+                    30%{transform:rotate(90deg) translate(-63px,78px);}
+                    40%{transform:rotate(90deg) translate(-60px,81px);}
+                    50%{transform:rotate(90deg) translate(-57px,82px);}
+                    60%{transform:rotate(90deg) translate(-60px,80px);}
+                    70%{transform:rotate(90deg) translate(-62px,82px);}
+                    80%{transform:rotate(90deg) translate(-59px,78px);}
+                    90%{transform:rotate(90deg) translate(-62px,81px);}
+                    100%{transform:rotate(90deg) translate(-60px,80px);}
+                }
+                .web-designer-header{
+                    transition:all 1s;
+                    font-family:"Major Mono Display";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:rotate(-80deg) translate(-90px,-180px);
+                    cursor:pointer;
+                    z-index:-1;
+                    animation: webDesignerShake 0.5s infinite;
+                }
+                @keyframes webDesignerShake{
+                    0%{transform:rotate(-80deg) translate(-91px,-178px);}
+                    10%{transform:rotate(-80deg) translate(-92px,-182px);}
+                    20%{transform:rotate(-80deg) translate(-89px,-179px);}
+                    30%{transform:rotate(-80deg) translate(-92px,-181px);}
+                    40%{transform:rotate(-80deg) translate(-94px,-178px);}
+                    50%{transform:rotate(-80deg) translate(-91px,-176px);}
+                    60%{transform:rotate(-80deg) translate(-88px,-179px);}
+                    70%{transform:rotate(-80deg) translate(-93px,-184px);}
+                    80%{transform:rotate(-80deg) translate(-90px,-181px);}
+                    90%{transform:rotate(-80deg) translate(-87px,-180px);}
+                    100%{transform:rotate(-80deg) translate(-90px,-182px);}
+                }
+                .mathematician-header{
+                    transition:all 1s;
+                    font-family:"Montserrat Alternates";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:rotate(80deg) translate(290px,-20px);
+                    cursor:pointer;
+                    font-size:35px;
+                    animation: mathematicianShake 0.5s infinite;
+                }
+                @keyframes mathematicianShake{
+                    0%{transform:rotate(80deg) translate(288px,-18px);}
+                    10%{transform:rotate(80deg) translate(287px,-22px);}
+                    20%{transform:rotate(80deg) translate(290px,-19px);}
+                    30%{transform:rotate(80deg) translate(289px,-21px);}
+                    40%{transform:rotate(80deg) translate(292px,-24px);}
+                    50%{transform:rotate(80deg) translate(289px,-19px);}
+                    60%{transform:rotate(80deg) translate(292px,-21px);}
+                    70%{transform:rotate(80deg) translate(293px,-19px);}
+                    80%{transform:rotate(80deg) translate(288px,-17px);}
+                    90%{transform:rotate(80deg) translate(288px,-22px);}
+                    100%{transform:rotate(80deg) translate(291px,-23px);}
+                }
+                .singer-songwriter-header{
+                    transition:all 1s;
+                    font-family:"Quicksand";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:rotate(-75deg) translate(-350px,-110px);
+                    cursor:pointer;
+                    font-size:43px;
+                    animation: singerSongwriterShake 0.5s infinite;
+                }
+                @keyframes singerSongwriterShake{
+                    0%{transform:rotate(-75deg) translate(-349px,-112px);}
+                    10%{transform:rotate(-75deg) translate(-352px,-110px);}
+                    20%{transform:rotate(-75deg) translate(-347px,-115px);}
+                    30%{transform:rotate(-75deg) translate(-351px,-113px);}
+                    40%{transform:rotate(-75deg) translate(-353px,-111px);}
+                    50%{transform:rotate(-75deg) translate(-349px,-108px);}
+                    60%{transform:rotate(-75deg) translate(-350px,-112px);}
+                    70%{transform:rotate(-75deg) translate(-352px,-109px);}
+                    80%{transform:rotate(-75deg) translate(-349px,-111px);}
+                    90%{transform:rotate(-75deg) translate(-352px,-108px);}
+                    100%{transform:rotate(-75deg) translate(-353px,-110px);}
+                }
+                .fashion-designer-header{
+                    transition:all 1s;
+                    font-family:"Plaster";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:rotate(75deg) translate(420px,60px);
+                    cursor:pointer;
+                    z-index:1;
+                    font-size:35px;
+                    animation: fashionDesignerShake 0.5s infinite;
+                }
+                 @keyframes fashionDesignerShake{
+                    0%{transform:rotate(75deg) translate(420px,60px);}
+                    10%{transform:rotate(75deg) translate(423px,63px);}
+                    20%{transform:rotate(75deg) translate(421px,65px);}
+                    30%{transform:rotate(75deg) translate(418px,60px);}
+                    40%{transform:rotate(75deg) translate(416px,58px);}
+                    50%{transform:rotate(75deg) translate(419px,61px);}
+                    60%{transform:rotate(75deg) translate(422px,59px);}
+                    70%{transform:rotate(75deg) translate(418px,61px);}
+                    80%{transform:rotate(75deg) translate(420px,57px);}
+                    90%{transform:rotate(75deg) translate(421px,60px);}
+                    100%{transform:rotate(75deg) translate(419px,58px);}
+                }
+                .writer-header{
+                    transition:all 1s;
+                    font-family:"Raleway";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform: rotate(90deg) translate(-430px,85px);
+                    cursor:pointer;
+                    z-index:-1;
+                    font-size:35px;
+                    animation: writerShake 0.5s infinite;
+                }
+                @keyframes writerShake{
+                    0%{transform:rotate(90deg) translate(-430px,85px);}
+                    10%{transform:rotate(90deg) translate(-428px,83px);}
+                    20%{transform:rotate(90deg) translate(-431px,86px);}
+                    30%{transform:rotate(90deg) translate(-429px,88px);}
+                    40%{transform:rotate(90deg) translate(-427px,90px);}
+                    50%{transform:rotate(90deg) translate(-430px,88px);}
+                    60%{transform:rotate(90deg) translate(-428px,83px);}
+                    70%{transform:rotate(90deg) translate(-431px,82px);}
+                    80%{transform:rotate(90deg) translate(-433px,85px);}
+                    90%{transform:rotate(90deg) translate(-431px,87px);}
+                    100%{transform:rotate(90deg) translate(-428px,89px);}
+                }
+                .artist-header{
+                    transition:all 1s;
+                    font-family:"Six Caps";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:translate(170px,-855px);
+                    cursor:pointer;
+                    font-size:55px;
+                    animation: artistShake 0.5s infinite;
+                }
+                @keyframes artistShake{
+                    0%{transform:translate(170px,-855px);}
+                    10%{transform:translate(172px,-853px);}
+                    20%{transform:translate(170px,-851px);}
+                    30%{transform:translate(168px,-853px);}
+                    40%{transform:translate(172px,-852px);}
+                    50%{transform:translate(169px,-850px);}
+                    60%{transform:translate(172px,-853px);}
+                    70%{transform:translate(170px,-855px);}
+                    80%{transform:translate(168px,-853px);}
+                    90%{transform:translate(170px,-855px);}
+                    100%{transform:translate(172px,-857px);}
+                }
+                .inventor-header{
+                    transition:all 1s;
+                    font-family:"Syncopate";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:translate(-95px,-40px);
+                    cursor:pointer;
+                    font-size:50px;
+                    animation: inventorShake 0.5s infinite;
+                }
+                @keyframes inventorShake{
+                    0%{transform:translate(-95px,-40px);}
+                    10%{transform:translate(-93px,-42px);}
+                    20%{transform:translate(-96px,-39px);}
+                    30%{transform:translate(-98px,-37px);}
+                    40%{transform:translate(-96px,-40px);}
+                    50%{transform:translate(-93px,-42px);}
+                    60%{transform:translate(-91px,-39px);}
+                    70%{transform:translate(-93px,-41px);}
+                    80%{transform:translate(-94px,-39px);}
+                    90%{transform:translate(-96px,-37px);}
+                    100%{transform:translate(-95px,-40px);}
+                }
+                .actor-header{
+                    transition:all 1s;
+                    font-family:"Monoton";
+                    /**This has the same value in PJS, it justs rotates and translates the word.*/
+                    transform:translate(120px,-790px);
+                    cursor:pointer;
+                    font-size:40px;
+                    animation: actorShake 0.5s infinite;
+                }
+                @keyframes actorShake{
+                    0%{transform:translate(118px,-792px);}
+                    10%{transform:translate(122px,-788px);}
+                    20%{transform:translate(120px,-791px);}
+                    30%{transform:translate(119px,-788px);}
+                    40%{transform:translate(121px,-790px);}
+                    50%{transform:translate(118px,-789px);}
+                    60%{transform:translate(117px,-792px);}
+                    70%{transform:translate(118px,-788px);}
+                    80%{transform:translate(120px,-790px);}
+                    90%{transform:translate(121px,-788px);}
+                    100%{transform:translate(122px,-792px);}
+                }
+                .humanoid-figure{
+                    /**This has the same value in PJS, it justs scales and translates the word.*/
+                    transform: scale(0.5) translate(390px,-450px);
+                }
+                .header-blur{
+                    color:transparent;
+                    text-shadow:0 0 10px black;
+                }
+                .stop-animation{
+                    animation:0;
+                }
+                .physicist-text-color-change{
+                    /*This is called a HEX color code, it is the same as 'fill()' except it is like a code which computers read as color.*/
+                    color:#01579B;
+                }
+                .inventor-text-color-change{
+                    color:#EF6C00;
+                }
+                .writer-text-color-change{
+                    color:#304FFE;
+                }
+                .artist-text-color-change{
+                    color:#673AB7;
+                }
+                .actor-text-color-change{
+                    color:#D32F2F;
+                }
+                .web-designer-text-color-change{
+                    color:#1DE9B6;
+                }
+                .mathematician-text-color-change{
+                    color:goldenrod;
+                }
+                .singer-songwriter-text-color-change{
+                    color:#43A047;
+                }
+                .fashion-designer-text-color-change{
+                    color:#FF5252;
+                }
+                .career-text-divs{
+                    font-size:1px;
+                }
+                .career-text-header{
+                    font-family:"Major Mono Display";
+                    margin-left:20px;
+                    width:0px;
+                    opacity:1;
+                    overflow:hidden;
+                }
+                .career-text-body{
+                    
+                }
+                .career-divs{
+                    width:300px;
+                    padding-left:0px;
+                    position:absolute;
+                    top:0px;
+                    left:20px;
+                    float:left;
+                    
+                }
+                
+                .physicist-text-typing-animation{
+                    /*The following couple 100 lines of code are the typing animations.*/
+                    color:#01579B;
+                    /*Here is that variable I was talking about. It is initiated with 'var(variable-name)'*/
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    physicistTypingAnimation 1.5s steps(9) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite
+                    ;
+                    opacity:1;
+                    
+                }
+                @keyframes physicistTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:220px;}
+                }
+                
+                .inventor-text-typing-animation{
+                    color:#EF6C00;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    inventorTypingAnimation 1.5s steps(8) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                @keyframes inventorTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:198px;}
+                }
+                
+                .artist-text-typing-animation{
+                    color:#673AB7;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    artistTypingAnimation 1.5s steps(6) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                @keyframes artistTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:147px;}
+                }
+                .writer-text-typing-animation{
+                    color:#304FFE;
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    writerTypingAnimation 1.5s steps(6) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                @keyframes writerTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:147px;}
+                }
+                .actor-text-typing-animation{
+                    color:#D32F2F;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    actorTypingAnimation 1.5s steps(5) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                @keyframes actorTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:122px;}
+                }
+                .web-designer-text-typing-animation{
+                    color:#1DE9B6;
+                    font-size:32px;
+                    overflow:hidden;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation: 
+                    webDesignerTypingAnimation 1.5s steps(12) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                .web-designer-career-header{
+                    font-size:32px;
+                    overflow:hidden;
+                    /*Keeps the sentence on one line.*/
+                    white-space: nowrap;
+                }
+                @keyframes webDesignerTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:293px;}
+                }
+                .mathematician-text-typing-animation{
+                    font-size:20px;
+                    color:goldenrod;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation:
+                    mathematicianTypingAnimation 1.5s steps(13) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                .mathematician-career-header{
+                    font-size:28px;
+                }
+                @keyframes mathematicianTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:278px;}
+                }
+                .singer-songwriter-text-typing-animation{
+                    color:#43A047;
+                    font-size:22px;
+                    /*Keeps the sentence on one line.*/
+                    white-space: nowrap;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation:
+                    singerSongwriterTypingAnimation 1.5s steps(19) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                .singer-songwriter-career-header{
+                    font-size:22px;
+                    overflow:hidden;
+                    white-space: nowrap;
+                }
+                @keyframes singerSongwriterTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:319px;}
+                }
+                .fashion-designer-text-typing-animation{
+                    color:#FF5252;
+                    /*Keeps the sentence on one line.*/
+                    white-space: nowrap;
+                    /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  black;
+                    animation:
+                    fashionDesignerTypingAnimation 1.5s steps(16) forwards,
+                    blinkingTypingAnimation 1s 1.5s step-end infinite;
+                    opacity:1;
+                }
+                .fashion-designer-career-header{
+                    font-size:22px;
+                    overflow:hidden;
+                    white-space: nowrap;
+                }
+                @keyframes fashionDesignerTypingAnimation{
+                    0%{width:0px;}
+                    100%{width:269px;}
+                }
+                @keyframes blinkingTypingAnimation{
+                    from, to{border-color:black;}
+                    50%{border-color:transparent;}
+                }
+                .opening-slider{
+                    height:100vh;
+                    width:100vh;
+                    margin:-8px;
+                    padding-top:38vh;
+                    padding-left:31.25vw;
+                    background-color:rgb(207,181,59);
+                }
+                .opening-header{
+                    font-family:"Major Mono Display";
+                    width:0px;
+                    font-size:7vw;
+                    height:50px;
+                    overflow:hidden;
+                    color:white;
+                     /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                    border-right: var(--career-header-type-thickness) solid  transparent;
+                    animation:
+                    openingHeaderTypingAnimation 1.5s 1s steps(7) forwards,
+                    sliderBlinkingTypingAnimation 1s 2.5s steps(1) infinite;
+                }
+                .slider-proceed{
+                    font-family:"Major Mono Display";
+                    color:white;
+                    cursor:pointer;
+                    transition:word-spacing 1s;
+                    opacity:0;
+                    animation:sliderProceedFadeIn 1s 3s;
+                    animation-fill-mode: forwards;
+                }
+                 /*Makes the word space increase, which makes the arrow go the right*/
+                .slider-proceed:hover{
+                    word-spacing:10px;
+                }
+                @keyframes openingHeaderTypingAnimation{
+                    0%{width:0px; border-color:white;}
+                    100%{width:225px; border-color:white;}
+                }
+                @keyframes sliderProceedFadeIn{
+                    from{opacity:0;margin-left:-5vw;}
+                    to{opacity:1;margin-left:2vw;}
+                }
+                .introduction-slider{
+                    background-color:rgb(0, 119, 224);
+                    color:white;
+                    width:100vw;
+                    height:100vh;
+                    margin:-8px;
+                    padding-top:9vh;
+                    padding-left:3vw;
+                    overflow:auto;
+            
+                }
+                .introduction-slider-header{
+                    font-family:"Major Mono Display";
+                    width:0px;
+                    margin-bottom:19vh;
+                    overflow:hidden;
+                    transform:rotate(-15deg);
+                    border-right: var(--career-header-type-thickness) solid  transparent;
+                     /*The way the animation works is increase the width of the header, while keeping the overflow hidden, in abrupt changes (steps) making it look like it is typed.*/
+                     
+                    white-space: nowrap;
+                    animation:
+                    introductionHeaderTypingAnimation 1.5s 1s steps(19) forwards,
+                    sliderBlinkingTypingAnimation 1s 2.5s steps(1) infinite;
+                }
+                .introduction-proceed{
+                    font-family:"Major Mono Display";
+                    color:white;
+                    cursor:pointer;
+                    transition:word-spacing 1s;
+                    opacity:0;
+                    animation:sliderProceedFadeIn 1s 3s;
+                    animation-fill-mode: forwards;
+                    margin-top:70vh;
+                }
+                .introduction-proceed:hover{
+                    /*Makes the word space increase, which makes the arrow go the right*/
+                    word-spacing:10px;
+                }
+                @keyframes introductionHeaderTypingAnimation{
+                    0%{width:0px; border-color:white;}
+                    100%{width:464px; border-color:white;}
+                }
+                @keyframes sliderBlinkingTypingAnimation{
+                    from, to{border-color:white;}
+                    50%{border-color:transparent;}
+                }
+                .help-slider{
+                    text-align:center;
+                    padding:2vw;
+                }
+                .help-header{
+                    font-family:"Major Mono Display";
+                }
+                .help-proceed{
+                    font-family:"Major Mono Display";
+                    color:black;
+                    cursor:pointer;
+                    transition:word-spacing 1s;
+                    opacity:1;
+                }
+                .help-proceed:hover{
+                    /*Makes the word space increase, which makes the arrow go the right*/
+                    word-spacing:10px;
+                }
+                .introduction-slider-text{
+                    font-size:13px;
+                    margin-top:-10vh;
+                    width:450px;
+
+                    float:right;
+                    margin-right:5vw;
+                
+                }
+                .career-text-body{
+                    font-size:12.5px;
+                }
+                
